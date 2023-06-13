@@ -1,2 +1,13 @@
 # customdialogbox
 Program made in Visual C.Net to display a custom dialog box. 
+
+Public Class FormPrincipal
+
+    Private Sub BtnMostrarCuadroPersonalizado_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles BtnMostrarCuadroPersonalizado.Click
+        If FormCuadroPersonalizado.ShowDialog() = Windows.Forms.DialogResult.OK Then
+            MessageBox.Show("Ha hecho clic sobre Aceptar")
+        Else
+            MessageBox.Show("Ha hecho clic sobre Cancelar")
+        End If
+    End Sub
+End Class
